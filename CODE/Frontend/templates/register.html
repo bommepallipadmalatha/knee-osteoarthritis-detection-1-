@@ -1,0 +1,35 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<section class="newsletter section">
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-6  col-12">
+                <!-- Start Newsletter Form -->
+                <div class="subscribe-text ">
+                    <h6>Registration Page</h6>
+                    <p class="">You already have an account?<br><a style="color: blue;" href="{{url_for('login')}}"><u>Login</u></a></p>
+                </div>
+                <!-- End Newsletter Form -->
+            </div>
+            <div class="col-lg-6  col-12">
+                <!-- Start Newsletter Form -->
+                <div class="subscribe-form ">
+                    <form action="{{url_for('register')}}" method="post" target="_blank" class="newsletter-inner">
+                        <input type="email" name="email" placeholder="Your email address" class="common-input" onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Your email address'" required="" type="email"><br><br>
+                        <input type="password" name="password" placeholder="Your password" class="common-input" onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Your password'" required="" type="email"><br><br>
+                        <input type="password" name="c_password" placeholder="Conform password" class="common-input" onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Conform password'" required="" type="email"><br><br>
+                        <button type="submit" style="margin-left: 0px;" class="btn">Register</button>
+                    </form>
+                </div>
+                <!-- End Newsletter Form -->
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

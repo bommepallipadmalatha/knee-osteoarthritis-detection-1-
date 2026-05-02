@@ -1,0 +1,74 @@
+{% extends 'index.html' %}
+
+{% block content %}
+		
+		
+	
+		<header class="header" >
+			<div class="header-inner">
+				<div class="container">
+					<div class="inner">
+						<div class="row">
+							
+							<div style="width: 100%;" class="col-lg-7 col-md-9 col-12">
+								<div class="main-menu">
+									<nav class="navigation">
+										<ul class="nav menu">
+											<li class="active"><a href="{{url_for('home')}}">Home</a></li>
+											<li><a href="{{url_for('upload')}}">Upload </a></li>
+										</ul>
+									</nav>
+								</div>
+								<!--/ End Main Menu -->
+							</div>
+							<div class="col-lg-2 col-12">
+								<div class="get-quote">
+									<a style="margin-left: 300px;" href="{{url_for('index')}}" class="btn">LogOut</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Header Inner -->
+		</header>
+		<!-- End Header Area -->
+
+		<div class="breadcrumbs overlay">
+			<div class="container">
+				<div class="bread-inner">
+					<div class="row">
+						<div class="col-12">
+							<h2>Welcome!</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="pf-details section">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="inner-content">
+							<div class="image-slider">
+								<div class="pf-details-slider">
+									<img src="/static/img/call-bg.jpg" alt="#">
+									<img src="/static/img/call-bg.jpg" alt="#">
+									<img src="/static/img/call-bg.jpg" alt="#">
+								</div>
+							</div>
+							<div class="date">
+								<ul>
+								</ul>
+							</div>
+							<div class="body-text">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+
+{% endblock %}
